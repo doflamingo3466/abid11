@@ -1,0 +1,96 @@
+:root {
+  --ink: #20231f;
+  --paper: #f4f3ee;
+  --lime: #d7f36a;
+  --muted: #777a72;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #deded7;
+}
+
+.brand {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.1em;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.hero {
+  background: var(--lime);
+  border-radius: 1.25rem;
+  min-height: 280px;
+}
+
+.hero h1 {
+  letter-spacing: -0.07em;
+  line-height: 0.95;
+  font-size: clamp(3rem, 8vw, 6.6rem);
+}
+
+.hero-mark {
+  font-size: clamp(5rem, 14vw, 11rem);
+  line-height: 0.8;
+  letter-spacing: -0.12em;
+  font-weight: 800;
+}
+
+.product-card {
+  border: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  height: 100%;
+}
+
+.product-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  padding: 1.15rem;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.btn-dark {
+  border-radius: 2rem;
+}
+
+.cart-box {
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.qty-btn {
+  width: 1.9rem;
+  height: 1.9rem;
+  padding: 0;
+  line-height: 1;
+}
+
+footer {
+  color: var(--muted);
+  border-top: 1px solid #deded7;
+}
+
+@media (min-width: 992px) {
+  .cart-box {
+    top: 1rem;
+  }
+}
