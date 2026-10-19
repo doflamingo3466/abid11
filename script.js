@@ -1,39 +1,39 @@
 const products = [
   [
-    "A Bread",
-    6800,
-    "A very soft bread",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_sb7YZyRR7eojX8jeilrU5YfTr-dKKT1kvte4lhwIZA&s=10",
+    "Black and Milk Coffee",
+    360,
+    "A freshly brewed coffee for a fresh start of the day",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDu7IvQ4QCxdnPrRTh7oxPUAxMdCAfWocqmqdgKJ6wUQ&s=10",
   ],
   [
-    "Daily cup",
-    1400,
-    "A hand-sized favorite in matte stoneware.",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8ny1lOjf463eEhB3AG5FwGh3lIGcqlX8tIF6eZ56ew&s=10",
+    "Croissants",
+    400,
+    "A croissants full of chocolate",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbCuufF_TQqhhKDONoyecNqBnIPfXFQUH3D__dijcFw&s=10",
   ],
   [
-    "Soft carry tote",
-    3200,
-    "Room for the bits that make a day.",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTxoGU9f85C1GZ-EvSEiX41zMpn_oOD3lvah6A9BBUQ&s=10",
+    "A honey Pan cake",
+    220,
+    "Pan cakes with honey",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Q7ELp5PSo09M1-wJh3cU-x4U7hHsoA5IANQruCWOhA&s=10",
   ],
   [
-    "Field notebook",
-    1800,
-    "An open page for plans and passing thoughts.",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7vf7GggcvpnLppcfA7UXd5aZPn_xyEF1RYcfTncg8Q&s=10",
+    "Milk Tea",
+    170,
+    "A karak tea to refresh your mind",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSqjWqlpv8XtYuXBiYMv9wob2L6ZN2F4wUvv8ZLhQycg&s=10",
   ],
   [
-    "Sunday vase",
-    4200,
-    "A simple shape for something in bloom.",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJtcmfPW2LrOMk1Kvwc7OjwBqLusqWJDUniv6MILvmKA&s=10",
+    "Paratha",
+    200,
+    "A classic cultural breakfast",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcAv-WeV6Br8t8i8oKT7ug8820pbY5jiUERdQpJrAcg&s=10",
   ],
   [
-    "Pebble speaker",
-    89,
-    "Pocket-sized sound, all day long.",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJP8uHs4NKCgXbTlSa_7z-tf5t3doeY99ZyiqOJXzGQ&s=10",
+    "Lassi",
+    100,
+    "A cultural drink prefered in breakfast to stay energetic",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAOAWy6WPlwlc9cdL_0FOOHTP2VV41TvOMhMcr3gLGcg&s=10",
   ],
 ];
 
@@ -84,7 +84,7 @@ document.addEventListener("click", (e) => {
     if (!cart[i]) delete cart[i];
   }
   if (e.target.id === "clear") Object.keys(cart).forEach((i) => delete cart[i]);
-  if (e.target.id === "continue") alert("Thanks for stopping by .dot!");
+  if (e.target.id === "continue") alert("ok hogya g");
   update();
 });
 
