@@ -1,58 +1,64 @@
-:root {
-  --ink: #20231f;
-  --paper: #f4f3ee;
-  --lime: #d7f36a;
-  --muted: #777a72;
-}
-
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: #f4f3ee;
+  color: #20231f;
   font-family: Arial, sans-serif;
 }
 
-.navbar {
+.navbar,
+footer {
   border-bottom: 1px solid #deded7;
 }
 
+footer {
+  border-top: 1px solid #deded7;
+  border-bottom: 0;
+  color: #777a72;
+}
+
 .brand {
+  color: #20231f;
   font-size: 1.7rem;
   font-weight: 800;
   letter-spacing: -0.1em;
 }
 
 .eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
+  color: #777a72;
   font-size: 0.72rem;
-  color: var(--muted);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .hero {
-  background: var(--lime);
-  border-radius: 1.25rem;
   min-height: 280px;
+  background: #d7f36a;
+  border-radius: 1.25rem;
 }
 
 .hero h1 {
+  font-size: clamp(3rem, 8vw, 6.6rem);
+  font-weight: bold;
   letter-spacing: -0.07em;
   line-height: 0.95;
-  font-size: clamp(3rem, 8vw, 6.6rem);
 }
 
 .hero-mark {
   font-size: clamp(5rem, 14vw, 11rem);
-  line-height: 0.8;
-  letter-spacing: -0.12em;
   font-weight: 800;
+  letter-spacing: -0.12em;
+  line-height: 0.8;
+}
+
+.product-card,
+.cart-box {
+  border: 0;
+  border-radius: 1rem;
+  background: #fff;
 }
 
 .product-card {
-  border: 0;
-  border-radius: 1rem;
-  overflow: hidden;
-  background: #fff;
   height: 100%;
+  overflow: hidden;
 }
 
 .product-card img {
@@ -65,28 +71,12 @@ body {
 }
 
 .price {
-  font-weight: 700;
+  font-weight: bold;
 }
 
-.btn-dark {
+.btn-dark,
+.btn-outline-dark {
   border-radius: 2rem;
-}
-
-.cart-box {
-  background: #fff;
-  border-radius: 1rem;
-}
-
-.qty-btn {
-  width: 1.9rem;
-  height: 1.9rem;
-  padding: 0;
-  line-height: 1;
-}
-
-footer {
-  color: var(--muted);
-  border-top: 1px solid #deded7;
 }
 
 @media (min-width: 992px) {
